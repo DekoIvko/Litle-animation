@@ -1,0 +1,196 @@
+@keyframes charging {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 84.88px;
+	}
+}
+
+@keyframes outlinecircle {
+	0% {
+		top: 40px;
+		left: 140px;
+	}
+	25% {
+		top: 40px;
+		left: 234.88px;
+	}
+	50% {
+		top: 134.88px;
+		left: 234.88px;
+	}
+	75% {
+		top: 134.88px;
+		left: 140px;
+	}
+	100% {
+		top: 40px;
+		left: 140px;
+	}
+}
+
+@keyframes orbit {
+	0% { transform: rotate(0deg) translateX(20px); }
+    20% {transform: rotate(180deg) translateX(20px);}
+    100% {transform: rotate(180deg) translateX(20px);}
+}
+@keyframes orbit1 {
+	0% { transform: rotate(0deg) translateX(-20px); }
+    20% {transform: rotate(180deg) translateX(-20px);}
+    100% {transform: rotate(180deg) translateX(-20px);}
+}
+
+.main {
+	flex-direction: column;
+	background-color: white;;
+	height: 500px;
+	width: 1000px;
+}
+
+.box1 {
+	display: inline-block;
+	position: relative;
+	background-color: red;
+	width: 500px;
+	height: 250px;
+	float: left;
+}
+
+.loading-text1 {
+	position: absolute;
+	top: 45%;
+	left: 40%;
+	background-color: white;
+	opacity: 0.5;
+	width: 84.88;
+}
+
+.loading-line-up {
+	position: absolute;
+	top: 36.5%;
+	left: 32%;
+	background-color: white;
+	width: 84.88px;
+	height: 5px; 
+}
+
+.charging {
+	animation-name: charging;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.loading-line-down {
+	position: absolute;
+	bottom: 39.5%;
+	left: 32%;
+	background-color: white;
+	height: 5px;
+	width: 84.88px; 
+}
+
+.loading-fill {
+	position: absolute;
+	top: 45%;
+	left: 40%;
+	background-color: white;
+	width: 84.88px;
+	height: 18px; 
+}
+
+.box2 {
+	display: inline-block;
+	position: relative;
+	background-color: orangered;
+	width: 500px;
+	height: 250px;
+	float: left;
+}
+
+.loading-text2 {
+	position: absolute;
+	top: 45%;
+	left: 40%;
+	background-color: white;
+	opacity: 0.5;
+	width: 84.88;
+}
+
+.box3 {
+	position: relative;
+	display: inline-block;
+	background-color: orangered;
+	width: 500px;
+	height: 248px;
+	float: left;	
+}
+
+.box4 {
+	position: relative;
+	display: inline-block;
+	background-color: red;
+	width: 500px;
+	height: 248px;
+	float: left;
+}
+
+.square1 {
+	top: 50px;
+	left: 150px;
+	width: 84.88px;
+	height: 84.88px;
+	position: absolute;
+	background-color: rgba(300, 255, 255, .5);
+}
+
+
+.square {
+	top: 50px;
+	left: 150px;
+	width: 84.88px;
+	height: 84.88px;
+	position: absolute;
+	background-color: white;
+}
+
+.outlinecircle {
+	position: absolute;
+	top: 40px;
+	left: 140px;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	animation-name: outlinecircle;
+	animation-duration: 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.circle {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	background-color: white;
+}
+
+.leftcircle {
+	transform: translateX(-30px);
+	animation-name: orbit1;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
+
+.rightcircle {
+	transform: translateX(30px);
+	animation-name: orbit;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear; 
+}
